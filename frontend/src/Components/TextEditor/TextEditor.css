@@ -1,0 +1,33 @@
+.text-editor-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.text-editor {
+  margin-bottom: 20px;
+}
+
+.saved-posts {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.saved-post {
+  margin-bottom: 20px;
+}
+
+.trail-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.trail-inputs input {
+  padding: 10px;
+}
+
+.trail-inputs button {
+  padding: 10px;
+  width: 10%;
+}

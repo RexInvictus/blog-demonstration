@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "create-react-app": "^5.0.1",
+    "react-simple-captcha": "^9.3.1"
+  }
+}

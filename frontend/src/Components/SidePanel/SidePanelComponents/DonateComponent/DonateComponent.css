@@ -1,0 +1,47 @@
+.donate-list li {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.donate-list li a {
+  text-decoration: none;
+  color: rgb(0, 121, 219);
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.donate-list li a:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.donate-list {
+  margin-top: 0;
+}
+
+.donate-list h2 {
+  margin-left: 10px;
+}
+
+.donate-text {
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1133px) {
+  .donate-list li {
+    margin-left: -20px;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .donate-list li {
+      margin-left: -30px;
+      font-size: 10px;
+    }
+  }
+  
+  
+  

@@ -1,0 +1,70 @@
+.sidepanel-about-container {
+}
+
+.sidepanel-about-image-div {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+.sidepanel-about-image {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.about-me-preview-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me-preview-div button {
+  margin-right: 10px;
+  margin-top: 1px;
+  color: rgb(0, 121, 219);
+}
+
+.more-info-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.about-text {
+  color: black;
+  font-family: "Garamond", "Georgia", "serif";
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+.about-text:last-of-type {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .about-text {
+    font-size: 15px;
+  }
+
+  .about-text:last-of-type {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .about-text:last-of-type {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,112 @@
+.comment-item-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 400px; /* Set a max height */
+  overflow-y: auto;
+  width: 90%;
+  padding-top: 10px;
+  margin: auto;
+}
+
+.comment-item-box {
+  width: 90%;
+  background-color: #f3f0ec;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+.comment-item-box h4 {
+  margin-bottom: 0;
+}
+
+.comment-item-box p {
+  margin-top: 0;
+  margin-left: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.create-comment-div textarea {
+  resize: vertical;
+  min-height: 100px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.create-comment-div button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin: 0;
+}
+
+.create-comment-div h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: rgb(0, 121, 219);
+}
+
+.create-comment-div input[type="text"],
+.create-comment-div textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+
+.create-comment-div textarea {
+  resize: vertical;
+  min-height: 100px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-comments {
+  border-bottom: #ccc solid 1px;
+}
+
+.comment-item-box:last-of-type {
+  margin-bottom: 10px;
+}
+
+.create-comment-div button:hover {
+  background-color: #0056b3;
+}
+
+.name-email-div-comment {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.name-email-div-comment input {
+  margin: auto;
+}
+
+.create-comment-title-div-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-comment-title-div-comment h4:last-of-type {
+  transform: translateY(6%);
+  margin-left: 5px;
+}
+
+.create-comment-div {
+  border-top: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}

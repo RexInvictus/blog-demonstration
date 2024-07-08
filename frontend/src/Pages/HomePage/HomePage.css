@@ -1,0 +1,259 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f0ec;
+}
+.fade-in {
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+.coverDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.coverDiv {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  width: 80%;
+  background-image: url("https://d1zmmxvc41334f.cloudfront.net/fdaf28ab-9be6-466f-9ed0-30549a049c60.");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 5s ease-in-out;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.face-image-2 {
+  border-radius: 10px;
+  height: 90%;
+}
+
+.card {
+  padding: 20px;
+  z-index: 900;
+}
+
+.face {
+  z-index: 300;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.infoDiv {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.imageDiv {
+  width: 30%;
+  margin-left: 20px;
+  display: flex;
+}
+
+.info-text {
+  color: white;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Garamond", "Georgia", "serif";
+}
+
+.about-text-home {
+  color: black;
+  font-family: "Garamond", "Georgia", "serif";
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-text-h3-home {
+  color: black;
+  font-family: "Garamond", "Georgia", "serif";
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.subscribe-form {
+  margin-left: 20px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  padding-right: 0;
+  margin-right: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  background-color: #fab244;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #5e251b;
+}
+
+.post-cover-div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider-div {
+  height: 50px;
+  width: 80%;
+}
+
+.about-div-home {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: center;
+  transition: transform 1s ease;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about-image-div-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
+}
+
+.about-text-div-home {
+  margin-left: 10px;
+}
+
+.about-content-home {
+  display: flex;
+  width: 95%;
+}
+
+.post-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.post {
+  font-family: "Garamond", "Georgia", "serif";
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  margin-left: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.1s ease;
+  transform: scale(1);
+}
+
+.post img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.post:hover {
+  transform: scale(1.01);
+  transition: transform 0.1s ease;
+}
+
+.post:first {
+  margin-left: 0;
+}
+
+.post h3 {
+  margin-top: 0;
+  opacity: 0.5;
+}
+
+.post h2 {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 651px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+  .coverDiv {
+    width: 100%;
+    height: 400px;
+  }
+
+  .card {
+    margin: auto;
+  }
+  .post-cover-div {
+    width: 100%;
+  }
+
+  .post {
+    margin-left: 0;
+  }
+
+  .post:first-of-type {
+    margin-right: 10px;
+  }
+
+  .divider-div {
+    width: 100%;
+  }
+
+  .about-text-div-home {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1460px) {
+  .face {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1198px) {
+  .face-image-2 {
+    display: none;
+  }
+}
